@@ -1,0 +1,141 @@
+.no-select {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none;	 /* Safari */
+	-khtml-user-select: none;	 /* Konqueror HTML */
+	-moz-user-select: none;		 /* Old versions of Firefox */
+	-ms-user-select: none;		 /* Internet Explorer/Edge */
+	user-select: none;			 /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+body {
+	font-family: 'Consolas', Consolas, monospace;
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+	background-color: rgb(13,17,23);
+}
+
+.hide {
+	visibility: collapse;
+}
+
+.table {
+	width: 50%;
+	border: none;
+	margin: 20px auto 10px auto;
+	table-layout: fixed;
+	border-collapse: separate;
+	border-width: 4px;
+	background-color: rgb(22,27,34);
+    border-spacing: 7px;
+	border-radius: 10px;
+}
+
+.table thead th {
+	border-radius: 7.5px;
+	overflow: hidden;
+	line-height: 1.5em;
+	font-weight: bold;
+	text-align: left;
+	border: none;
+	padding: 10px;
+	background: rgb(33, 46, 65);
+	cursor: pointer;
+}
+
+.table tbody {
+	color:rgb(210,210,210);
+	font-size: 13px;
+
+}
+
+.table thead {
+	color:rgb(240,240,240);
+	font-size: 14px;
+}
+
+.table tbody td {
+	border-radius: 5px;
+	overflow: hidden;
+	text-align: left;
+	border: none;
+	padding: 10px;
+	margin:5px;
+	vertical-align: top;
+	background: rgb(35,37,50);;
+}
+
+.table tbody tr .about-wrapper .about
+{
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;  
+}
+
+.table tbody tr .eye-color
+{
+	color: transparent;
+}
+
+th.sorted[data-order="-1"]::after {
+	content: '  \2193';
+}
+
+th.sorted[data-order="1"]::after {
+	content: '  \2191';
+}
+
+
+
+tr.col-1-hide :nth-child(1),
+tr.col-2-hide :nth-child(2), 
+tr.col-3-hide :nth-child(3), 
+tr.col-4-hide :nth-child(4) {
+	display: none;
+}
+
+
+.switch-area
+{
+	width: 50%;
+	margin: 10px auto;
+	background-color: rgb(22,27,34);
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.switch-area-inner
+{
+	padding: 10px;
+}
+
+.switch-group
+{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 20px;
+}
+
+@media (max-width: 1050px) {
+	.switch-group
+	{
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+.switch-wrapper
+{
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.switch-title
+{
+	color:rgb(240,240,240);
+	font-size: 13px;
+	overflow: hidden;
+}

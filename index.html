@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>JS-Test</title>
+		<link rel="stylesheet" href="styles/table.css">
+		<link rel="stylesheet" href="styles/slider.css">
+		<link rel="stylesheet" href="styles/modal.css">
+		<link rel="stylesheet" href="styles/pagination.css">
+	</head>
+	
+	<body>
+		
+		<table class="table-placeholder"></table>
+
+		<div class="switch-area">
+			<div class="switch-area-inner">
+				<div class="switch-group">
+					<div class="switch-wrapper">
+						<span class="switch-title">First Name</span>
+						<label class="switch">
+							<input type="checkbox" id="checkbox-1" checked="true" onclick="setColumnVisibility('checkbox-1', 'col-1-hide')">
+							<span class="slider"></span>
+						</label>
+					</div>
+
+					<div class="switch-wrapper">
+						<span class="switch-title">Last Name</span>
+						<label class="switch">
+							<input type="checkbox" id="checkbox-2" checked="true" onclick="setColumnVisibility('checkbox-2', 'col-2-hide')">
+							<span class="slider"></span>
+						</label>
+					</div>
+
+					<div class="switch-wrapper">
+						<span class="switch-title">About</span>
+						<label class="switch">
+							<input type="checkbox" id="checkbox-3" checked="true" onclick="setColumnVisibility('checkbox-3', 'col-3-hide')">
+							<span class="slider"></span>
+						</label>
+					</div>
+
+					<div class="switch-wrapper">
+						<span class="switch-title">Eye Color</span>
+						<label class="switch">
+							<input type="checkbox" id="checkbox-4" checked="true" onclick="setColumnVisibility('checkbox-4', 'col-4-hide')">
+							<span class="slider"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal" id="modal">
+			<div class="modal-card-wrapper">
+				<div class="modal-card">
+					
+					<div class="modal-header">
+						<span class="title">Изменить данные</span>
+						<span class="close-button" onclick="onCloseButtonClick()">&times;</span>
+					</div>
+					
+					<div class="modal-content">
+						<span class="form-label">Id</span>
+						<input type="text" class="form-input" name="id">
+
+						<div class="input-group">
+							<div>
+								<span class="form-label">First Name</span>
+								<input type="text" class="form-input" name="firstName">
+							</div>
+							<div>
+								<span class="form-label">Last Name</span>
+								<input type="text" class="form-input" name="lastName">
+							</div>
+						</div>
+
+						<div class="input-group">
+							<div>
+								<span class="form-label">Phone</span>
+								<input type="text" class="form-input" name="phone">
+							</div>
+							<div>
+								<span class="form-label">Eye Color</span>
+								<input type="color" class="form-input" name="eyeColor">
+							</div>
+						</div>
+
+						<span class="form-label">About</span>
+						<textarea name="about" class="form-input"></textarea>
+
+						<div class="button-group">
+							<span id="reset-button" class="button-outline reset-button">Отменить</span>
+							<span id="submit-button" class="button-outline submit-button">Сохранить</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="pagination-section-placeholder"></div>
+
+		<script src="scripts/people.js"></script>
+		<script src="scripts/modal.js"></script>
+		<script src="scripts/table.js"></script>
+
+	</body>
+</html>

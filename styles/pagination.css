@@ -1,0 +1,35 @@
+.pagination-section {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	gap: 10px;
+	color: rgb(210,210,210);
+	font-size: 16px;
+	font-family: 'Consolas', Consolas, monospace;
+	margin-bottom: 40px;
+}
+
+.pagination-section .button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: transparent;
+	height: 35px;
+	min-width: 35px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.pagination-section .button:hover {
+	background-color: rgb(60,60,80);
+}
+
+.button:first-child,
+.button:last-child {
+	border-radius: 30px;
+	width: 50px;
+}
+
+.pagination-section .button-active {
+	background-color: rgb(60,60,80);
+}
